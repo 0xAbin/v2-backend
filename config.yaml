@@ -1,0 +1,14 @@
+name: .
+networks:
+- id: 421614
+  start_block: 0
+  end_block: null
+  contracts:
+  - name: EventEmitter
+    address:
+    - 0x275813A478b0167BD327f6086d5356BD57971627
+    handler: ./src/EventHandlers.ts
+    events:
+    - event: EventLog(address msgSender, string eventName, string indexed eventNameHash, (((string,address)[],(string,address[])[]),((string,uint256)[],(string,uint256[])[]),((string,int256)[],(string,int256[])[]),((string,bool)[],(string,bool[])[]),((string,bytes32)[],(string,bytes32[])[]),((string,bytes)[],(string,bytes[])[]),((string,string)[],(string,string[])[])) eventData)
+    - event: EventLog1(address msgSender, string eventName, string indexed eventNameHash, bytes32 indexed topic1, (((string,address)[],(string,address[])[]),((string,uint256)[],(string,uint256[])[]),((string,int256)[],(string,int256[])[]),((string,bool)[],(string,bool[])[]),((string,bytes32)[],(string,bytes32[])[]),((string,bytes)[],(string,bytes[])[]),((string,string)[],(string,string[])[])) eventData)
+    - event: EventLog2(address msgSender, string eventName, string indexed eventNameHash, bytes32 indexed topic1, bytes32 indexed topic2, (((string,address)[],(string,address[])[]),((string,uint256)[],(string,uint256[])[]),((string,int256)[],(string,int256[])[]),((string,bool)[],(string,bool[])[]),((string,bytes32)[],(string,bytes32[])[]),((string,bytes)[],(string,bytes[])[]),((string,string)[],(string,string[])[])) eventData)
